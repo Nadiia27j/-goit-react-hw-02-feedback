@@ -10,6 +10,12 @@ class Feedback extends React.Component {
     total = 0;
     positivePercentage = null;
 
+    // addFeedback = type => {
+    //     this.setState(state => {
+    //         return { [type]: state[type] + 1}
+    //     })
+    // }
+
     addGoodFeedback = () => {
         this.setState(state => ({
             good: this.state.good + 1,
@@ -45,9 +51,9 @@ class Feedback extends React.Component {
         return (
          <div>
             <h1>Please leave feedback</h1>
-            <button onClick={this.addGoodFeedback}>Good</button>
-            <button onClick={this.addNeutralFeedback}>Neutral</button>
-            <button onClick={this.addBadFeedback}>Bad</button>
+            <button name="good" onClick={this.addGoodFeedback}>Good</button>
+            <button name="neutral" onClick={this.addNeutralFeedback}>Neutral</button>
+            <button name="bad" onClick={this.addBadFeedback}>Bad</button>
             <h2>Statistics</h2>
             <p>Good: {this.state.good}</p>
             <p>Neutral: { this.state.neutral}</p>
