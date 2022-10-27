@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 
 
-export  default function Statistics({  good = 0, neutral = 0, bad = 0, total = 0, positivePercentage = 0 }) {
+export  default function Statistics({ good = 0, neutral = 0, bad = 0, total = 0, positivePercentage = 0 }) {
     return (
         <ul>
            <li>Good: {good}</li>
