@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 
 
-export function Section({ title, children }) {
+export default function Section({ title, children }) {
     return (
         <>
          <div>{title}</div>
@@ -10,7 +10,7 @@ export function Section({ title, children }) {
     )
 };
 
-Section.PropTypes = {
+Section.propTypes = {
     title: PropTypes.string,
     children: PropTypes.any,
 }
