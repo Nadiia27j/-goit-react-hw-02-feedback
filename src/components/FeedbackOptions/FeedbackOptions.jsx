@@ -1,7 +1,7 @@
 import { PropTypes } from 'prop-types';
 
 
-export default function FeedbackOptions({ options, onLeaveFeedback}) {
+export default function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
         <div>
             {options.map((option, index) => (
