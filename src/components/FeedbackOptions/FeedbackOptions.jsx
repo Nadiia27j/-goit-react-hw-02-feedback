@@ -1,15 +1,17 @@
 import { PropTypes } from 'prop-types';
+import  { BoxButton } from './FeedbackOptions.styled';
+
 
 
 export default function FeedbackOptions({ options, onLeaveFeedback }) {
     return (
-        <div>
+        <>
             {options.map((option, index) => (
-                <div key={`option ${index}`}>
+                <BoxButton key={`option ${index}`}>
                    <button name='good' onClick={() => onLeaveFeedback(option)}>{option}</button>
-                </div>
+                </BoxButton>
             ))}
-        </div>
+        </>
     )
 }
 
