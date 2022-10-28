@@ -5,6 +5,7 @@ import Statistics from "./Statistics/Statistics";
 import Notification from './Notification/Notification';
 
 
+
 export class  App extends  React.Component {
   state = {
     good: 0,
